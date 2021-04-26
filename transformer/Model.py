@@ -303,7 +303,7 @@ class Encoder_src(torch.nn.Module):
         self.norm_att_self = torch.nn.LayerNorm(emb_dim, eps=1e-6)
         self.norm_ff = torch.nn.LayerNorm(emb_dim, eps=1e-6)
 
-    def forward(self, src, msk_src, z_sim, msk_sim):
+    def forward(self, src, msk_src):
         # NORM
         tmp1 = self.norm_att_self(src)
         # ATTN over source words
