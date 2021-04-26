@@ -14,7 +14,7 @@ data=$josep/data
 stovec=$josep/stovec
 
 dir=$josep/minmt_base
-dnet=$PWD/model_serie_plein
+dnet=$PWD/model_serie
 
 
 fmod=$dnet/network.checkpoint_00450000.pt ####### A MODIF

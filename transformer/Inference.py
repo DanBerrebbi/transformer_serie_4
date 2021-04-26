@@ -55,7 +55,7 @@ class Inference():
         pre, self.msk_pre = prepare_source(batch_pre, self.tgt_voc.idx_pad, self.device)
         ### encode
         self.z_sim = self.model.encode_sim(sim, self.msk_sim) #[bs,ls,ed]
-        self.z_src = self.model.encode_src(src, self.msk_src, self.z_sim, self.msk_sim)
+        self.z_src = self.model.encode_src(src, self.msk_src)
         self.z_pre = self.model.encode_pre(pre, self.msk_pre, self.z_sim, self.msk_sim)
 
         ### decode step-by-step

@@ -14,7 +14,7 @@ data=$josep/data
 stovec=$josep/stovec
 
 dir=$josep/minmt_base
-dnet=$PWD/model_serie_plein
+dnet=$PWD/model_serie
 
 
 python3 $setup -dnet $dnet -src_voc $dir/enfr.BPE.32k.voc -tgt_voc $dir/enfr.BPE.32k.voc
