@@ -57,8 +57,6 @@ class Options():
         self.format = argv.pop(0)
       elif tok=='-i_src' and len(argv):
         self.input_src = argv.pop(0)
-      elif tok=='-i_sim' and len(argv):
-        self.input_sim = argv.pop(0)
       elif tok=='-i_pre' and len(argv):
         self.input_pre = argv.pop(0)
       elif tok=='-p' and len(argv):
@@ -156,7 +154,7 @@ if __name__ == '__main__':
   ### load test ####
   ##################
 
-  test = Dataset([src_voc, src_voc, tgt_voc], [o.input_src, o.input_sim, o.input_pre], shard_size=o.shard_size, batch_size=o.batch_size, batch_type=o.batch_type, max_length=o.max_length, shuffle=False)
+  test = Dataset([src_voc, src_voc, tgt_voc], [o.input_src, o.input_pre], shard_size=o.shard_size, batch_size=o.batch_size, batch_type=o.batch_type, max_length=o.max_length, shuffle=False)
 
   ##################
   ### Inference ####
