@@ -1,6 +1,7 @@
-## Architecture en série 3
+## Architecture en série 4
 
-pre = f(sim)
+pre 
 
 tgt = g(pre, src)
 
+Architecture très simple, deux encodeurs seulement.
